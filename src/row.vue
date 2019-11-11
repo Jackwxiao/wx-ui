@@ -13,7 +13,7 @@
             align: {
                 type: String,
                 validator(value) {
-                    return ['left', 'right', 'center'].includes(value)
+                    return ['left', 'right', 'center'].indexOf(value) >=0
                 }
             }
         },
@@ -27,7 +27,7 @@
           },
             rowClass(){
               let {align} = this
-                return[align && `align-${align}`]
+                return [align && `align-${align}`]
             }
         },
         mounted: function () {

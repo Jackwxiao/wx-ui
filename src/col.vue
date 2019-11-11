@@ -7,7 +7,7 @@
     let validator = (value)=>{
         let keys= Object.keys(value)
         let valid = true
-        keys.forEach(key=>{
+        keys.forEach(key => {
             if(!['span','offset'].includes(key)) {
                 valid = false
             }
@@ -59,7 +59,7 @@
                     paddingLeft: this.gutter/2+'px',
                     paddingRight: this.gutter/2+'px',
                 }
-            },
+            }
         }
     }
 </script>

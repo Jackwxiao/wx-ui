@@ -42,11 +42,11 @@ describe('Row',()=>{
         const Constructor = Vue.extend(Row)
         const vm = new Constructor({
             propsData: {
-                align: 'center'
+                align: 'normal'
             }
         }).$mount(div)
         const element = vm.$el
-        expect(getComputedStyle(element).justifyContent).to.equal('center')
+        expect(getComputedStyle(element).justifyContent).to.equal('normal')
         div.remove()
         vm.$destroy()
     })
