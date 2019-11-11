@@ -29,66 +29,48 @@
 <body>
 <div id="app">
     <g-row >
-        <g-col span="24" :ipad="{span:12}" :pc="{span:8}">
+        <g-col span="23" offset="1" :narrow-pc="{span:12,offset:12}" :pc="{span:8}">
             <div class="demo"></div>
         </g-col>
-        <g-col span="24" :ipad="{span:12}" :pc="{span:8}">
-            <div class="demo"></div>
-        </g-col>
-        <g-col span="24" :ipad="{span:12}" :pc="{span:8}">
-        <div class="demo"></div>
-    </g-col>
-        <g-col span="24" :ipad="{span:12}" :pc="{span:8}">
-            <div class="demo"></div>
-        </g-col>
-        <g-col span="24" :ipad="{span:12}" :pc="{span:8}">
-            <div class="demo"></div>
-        </g-col>
-        <g-col span="24" :ipad="{span:12}" :pc="{span:8}">
-            <div class="demo"></div>
-        </g-col>
-
     </g-row>
-
-
-
-<!--    <div style="border: 1px solid black;">-->
-<!--        <g-row>-->
-<!--            <g-col>1</g-col>-->
-<!--            <g-col>2</g-col>-->
-<!--        </g-row>-->
-<!--        <g-row gutter="20">-->
-<!--            <g-col>gutter</g-col>-->
-<!--            <g-col>gutter</g-col>-->
-<!--        </g-row>-->
-<!--        <g-row gutter="20">-->
-<!--            <g-col>gutter</g-col>-->
-<!--            <g-col>gutter</g-col>-->
-<!--            <g-col>gutter</g-col>-->
-<!--        </g-row>-->
-<!--        <g-row>-->
-<!--            <g-col span="24"-->
-<!--                   :ipad="{span:8}"-->
-<!--                   :narrow-pc="{span:4}"-->
-<!--                   :pc="{span:2}"-->
-<!--                   :wide-pc="{span:1}"-->
-<!--            >1</g-col>-->
-<!--            <g-col span="24"-->
-<!--                   :ipad="{span:16}"-->
-<!--                   :narrow-pc="{span:20}"-->
-<!--                   :pc="{span:22}"-->
-<!--                   :wide-pc="{span:23}"-->
-<!--            >22</g-col>-->
-<!--        </g-row>-->
-<!--        <g-row>-->
-<!--            <g-col span="2">1</g-col>-->
-<!--            <g-col span="20" offset="2">11</g-col>-->
-<!--        </g-row>-->
-<!--        <g-row>-->
-<!--            <g-col span="2">1</g-col>-->
-<!--            <g-col span="16" offset="6">11</g-col>-->
-<!--        </g-row>-->
-<!--    </div>-->
+    <hr>
+    <div style="border: 1px solid black;">
+        <g-row>
+            <g-col>1</g-col>
+            <g-col>2</g-col>
+        </g-row>
+        <g-row gutter="20">
+            <g-col>gutter</g-col>
+            <g-col>gutter</g-col>
+        </g-row>
+        <g-row gutter="20">
+            <g-col>gutter</g-col>
+            <g-col>gutter</g-col>
+            <g-col>gutter</g-col>
+        </g-row>
+        <g-row>
+            <g-col span="24"
+                   :ipad="{span:8}"
+                   :narrow-pc="{span:4}"
+                   :pc="{span:2}"
+                   :wide-pc="{span:1}"
+            >1</g-col>
+            <g-col span="24"
+                   :ipad="{span:16}"
+                   :narrow-pc="{span:20}"
+                   :pc="{span:22}"
+                   :wide-pc="{span:23}"
+            >22</g-col>
+        </g-row>
+        <g-row>
+            <g-col span="2">1</g-col>
+            <g-col span="20" offset="2">11</g-col>
+        </g-row>
+        <g-row>
+            <g-col span="2">1</g-col>
+            <g-col span="16" offset="6">11</g-col>
+        </g-row>
+    </div>
 
     <div class="box">
         <g-input v-model="message"></g-input>
