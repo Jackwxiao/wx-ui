@@ -9,6 +9,12 @@
         props:{
             gutter: {
                 type:[Number,String]
+            },
+            align: {
+                type: String,
+                validator(value) {
+                    return ['left', 'right', 'center'].includes(value)
+                }
             }
         },
         computed:{
@@ -35,16 +41,14 @@
     .row{
         display: flex;
         flex-wrap: wrap;
-        &align-right {
+        &align-left {
             justify-content: flex-start;
         }
-        &align-left {
+        &align-right {
             justify-content: flex-end;
         }
         &slign-center{
             justify-content: center;
         }
     }
-
-
 </style>
