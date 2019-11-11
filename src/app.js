@@ -21,11 +21,6 @@ new Vue({
         loading2: false,
         loading3: false,
         message: 'hi'
-    },
-    methods: {
-        inputChange(e){
-            console.log(e)
-        }
     }
 })
 
