@@ -12,86 +12,39 @@
         :root {--button-height: 32px;--font-size: 14px;--button-bg: white;
             --button-active-bg: #eee;--border-radius: 4px;--color: #333;
             --border-color: #999;--border-color-hover: #666;}
-        #app {margin: 20px;}
+
         body {font-size: var(--font-size);}
     </style>
     <style>
-        .box{
-            margin: 20px;
+        .demo {
+            border: 1px solid grey;
+            min-height: 100px;
         }
-        .demo{
-            background: grey;
+        .sider{
+            background: #666;
+            width: 200px;
+        }
+        .header{
+            background: #999;
             height: 100px;
-            border: 1px solid red;
+        }
+        .footer{
+            background: #ccc;
+            height: 50px;
         }
     </style>
 </head>
 <body>
 <div id="app">
-    <g-row >
-        <g-col span="23" offset="1" :narrow-pc="{span:12,offset:12}" :pc="{span:8}">
-            <div class="demo"></div>
-        </g-col>
-    </g-row>
-    <hr>
-    <div style="border: 1px solid black;">
-        <g-row  gutter="20">
-            <g-col span="12">1</g-col>
-            <g-col span="12">2</g-col>
-        </g-row>
-        <g-row gutter="20">
-            <g-col>gutter</g-col>
-            <g-col>gutter</g-col>
-        </g-row>
-        <g-row gutter="20">
-            <g-col>gutter</g-col>
-            <g-col>gutter</g-col>
-            <g-col>gutter</g-col>
-        </g-row>
-        <g-row>
-            <g-col span="24"
-                   :ipad="{span:8}"
-                   :narrow-pc="{span:4}"
-                   :pc="{span:2}"
-                   :wide-pc="{span:1}"
-            >1</g-col>
-            <g-col span="24"
-                   :ipad="{span:16}"
-                   :narrow-pc="{span:20}"
-                   :pc="{span:22}"
-                   :wide-pc="{span:23}"
-            >22</g-col>
-        </g-row>
-        <g-row>
-            <g-col span="2">1</g-col>
-            <g-col span="20" offset="2">11</g-col>
-        </g-row>
-        <g-row>
-            <g-col span="2">1</g-col>
-            <g-col span="16" offset="6">11</g-col>
-        </g-row>
-    </div>
+    <g-layout style="height: 100vh;">
+        <g-sider class="demo">sider</g-sider>
+        <g-layout>
+            <g-header class="demo">header</g-header>
+            <g-content class="demo">content</g-content>
+            <g-footer class="demo">footer</g-footer>
+        </g-layout>
 
-    <div class="box">
-        <g-input v-model="message"></g-input>
-        <g-input value="无法输入" disabled></g-input>
-        <g-input value="无法输入" readonly></g-input>
-    </div>
-    <div class="box">
-        <g-input value="我" error="姓名不能少于两个字"></g-input>
-    </div>
-
-    <div style="margin: 20px;">
-        <g-button :loading="loading1" @click="loading1 = !loading1">按钮</g-button>
-        <g-button icon="settings" :loading="loading2" @click="loading2 = !loading2">按钮</g-button>
-        <g-button icon="settings" icon-position="right" :loading="loading3" @click="loading3 = !loading3">按钮</g-button>
-        <g-button-group>
-            <g-button icon="left">上一页</g-button>
-            <g-button>更多</g-button>
-            <g-button icon="right" icon-position="right">下一页</g-button>
-        </g-button-group>
-    </div>
-
+    </g-layout>
 </div>
 <script src="./src/app.js"></script>
 </body>
