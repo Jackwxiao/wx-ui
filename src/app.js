@@ -39,11 +39,19 @@ new Vue({
     },
     methods:{
         showToast(){
-            this.$toast(`测试文字 ${parseInt(Math.random()*100)}`,{
+            this.$toast(`测试文字 ${parseInt(Math.random() * 100)}`,{
                 enableHtml: false,
-                position: 'middle'
+                position: 'bottom',
+                closeButton:{
+                    text: '关闭',
+                    callback () {
+                        console.log('测试完毕')
+                    }
+                },
+                autoClose: true,
+                autoCloseDelay: 3
             })
-        }
+        },
     }
 })
 
