@@ -37,7 +37,8 @@ new Vue({
     },
     created() {
         this.$toast('<p>文字<strong>hivdbnxfshshsfhsfhs</strong></p>',{
-            enableHtml: true
+            enableHtml: true,
+            position: 'middle'
         })
     },
     methods:{
