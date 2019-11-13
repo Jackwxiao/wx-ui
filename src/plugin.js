@@ -18,7 +18,7 @@ export default {
         Vue.prototype.$toast = function (message, toastOptions) {
             //动态创建实例（组件）
             if (currentToast) {currentToast.close()}
-          currentToast = createToast({
+            currentToast = createToast({
               Vue,
               message,
               propsData: toastOptions,

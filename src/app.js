@@ -38,18 +38,26 @@ new Vue({
     created() {
     },
     methods:{
-        showToast(){
+        showToast1(){
+            this.showToast('top')
+        },
+        showToast2(){
+            this.showToast('middle')
+        },
+        showToast3(){
+            this.showToast('bottom')
+        },
+        showToast(position){
             this.$toast(`测试文字 ${parseInt(Math.random() * 100)}`,{
                 enableHtml: false,
-                position: 'bottom',
+                position,
                 closeButton:{
                     text: '关闭',
                     callback () {
                         console.log('测试完毕')
                     }
                 },
-                autoClose: true,
-                autoCloseDelay: 3
+                autoClose: 3,
             })
         },
     }
