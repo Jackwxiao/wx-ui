@@ -36,13 +36,13 @@ new Vue({
         message: 'hi'
     },
     created() {
-        this.$toast('<p>文字<strong>hivdbnxfshshsfhsfhs</strong></p>',{
-            enableHtml: true,
-            position: 'middle'
-        })
     },
     methods:{
         showToast(){
+            this.$toast(`测试文字 ${parseInt(Math.random()*100)}`,{
+                enableHtml: false,
+                position: 'middle'
+            })
         }
     }
 })
