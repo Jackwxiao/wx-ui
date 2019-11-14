@@ -51,13 +51,13 @@ new Vue({
             this.$toast(`测试文字 ${parseInt(Math.random() * 100)}`,{
                 enableHtml: false,
                 position,
+                autoClose: 3,
                 closeButton:{
                     text: '关闭',
                     callback () {
                         console.log('测试完毕')
                     }
                 },
-                autoClose: 3,
             })
         },
     }

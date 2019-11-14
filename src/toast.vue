@@ -19,7 +19,7 @@
             type:[Boolean,Number],
             default: 5,
             validator (value) {
-                return value === false || typeof value === 'number';
+                return value === false || typeof value === 'number'
             }
         },
         closeButton:{
