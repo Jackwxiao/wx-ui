@@ -6,46 +6,47 @@
 </template>
 <script>
     import Vue from 'vue'
+
     export default {
         name: 'GuLuTabs',
-        data(){
+        data() {
             return {
                 eventBus: new Vue()
             }
         },
-        provide(){
+        provide() {
             return {
-              eventBus: this.eventBus
+                eventBus: this.eventBus
             }
         },
-        props:{
-            selected:{
+        props: {
+            selected: {
                 type: String,
                 required: true
             },
-            direction:{
+            direction: {
                 type: String,
                 default: 'horizontal',
-                validator(value){
-                    return ['horizontal','vertical'].indexOf(value) >= 0
+                validator(value) {
+                    return ['horizontal', 'vertical'].indexOf(value) >= 0
                 }
             }
         },
         mounted() {
-            this.$children.forEach((vm)=>{
+            this.$children.forEach((vm) => {
                 if (vm.$options.name === 'GuLuHead') {
-                    vm.$children.forEach((childVm)=>{
-                        if(childVm.$options.name === 'GuLuItem' && childVm.name === this.selected){
-                this.eventBus.$emit('update:selected', this.selected, childVm)
-            }
-        })
-    }
+                    vm.$children.forEach((childVm) => {
+                        if (childVm.$options.name === 'GuLuItem' && childVm.name === this.selected) {
+                            this.eventBus.$emit('update:selected', this.selected, childVm)
+                        }
+                    })
+                }
             })
         }
     }
 </script>
 <style scoped lang="scss">
-    .tabs{
+    .tabs {
 
     }
 </style>
