@@ -41,7 +41,7 @@
 <style scoped lang="scss">
     .tabs-pane{
         &.active {
-
+            padding: 1em 0;
         }
     }
 </style>
