@@ -7,6 +7,10 @@
 <script>
     export default {
         name: 'GuLuBody',
+        inject:['eventBus'],
+        created(){
+
+        },
     }
 </script>
 <style scoped lang="scss">
