@@ -40,6 +40,8 @@
 </script>
 <style scoped lang="scss">
     .tabs-pane{
-        &.active {background: red;}
+        &.active {
+
+        }
     }
 </style>
