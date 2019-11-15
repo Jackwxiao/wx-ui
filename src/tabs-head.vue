@@ -11,16 +11,14 @@
 <script>
     export default {
         name: 'GuLuHead',
-        inject:['eventBus'],
-        created(){
-            this.eventBus.$on('update:selected',(item,vm)=>{
-                console.log(item)
+        inject: ['eventBus'],
+        mounted() {
+            this.eventBus.$on('update:selected', (item, vm) => {
+                let {width, height, top, left} = vm.$el.getBoundingClientRect()
+                this.$refs.line.style.width = `${width}px`
+                this.$refs.line.style.left = `${left}px`
             })
         },
-        props:{
-
-        },
-
     }
 </script>
 <style scoped lang="scss">
@@ -34,8 +32,8 @@
         > .line{
             position: absolute;
             bottom: 0;
-            border-bottom: 10px solid $blue;
-            width: 100px;
+            border-bottom:1px solid $blue;
+            transition: all 0.5s;
         }
         > .action-wrapper{
             margin-left: auto;

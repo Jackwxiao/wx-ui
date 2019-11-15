@@ -33,13 +33,13 @@
         },
         mounted() {
             this.$children.forEach((vm)=>{
-                if (vm.$options.name === 'GuLuTabsHead') {
-                    vm.$children.forEach((item)=>{
-                        if(item.$options.name === 'GuLuTabsItem' && item.name === this.selected){
-                            this.eventBus.$emit('update:selected', this.selected, item)
-                        }
-                    })
-                }
+                if (vm.$options.name === 'GuLuHead') {
+                    vm.$children.forEach((childVm)=>{
+                        if(childVm.$options.name === 'GuLuItem' && childVm.name === this.selected){
+                this.eventBus.$emit('update:selected', this.selected, childVm)
+            }
+        })
+    }
             })
         }
     }
