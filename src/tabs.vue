@@ -51,7 +51,6 @@
                 })
             }
         },
-
         mounted() {
             this.checkChildren()
             this.selectTab()
