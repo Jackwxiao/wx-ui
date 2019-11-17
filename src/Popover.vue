@@ -3,7 +3,7 @@
         <div ref="contentWrapper" class="content-wrapper" v-if="visible">
             <slot name="content"></slot>
         </div>
-        <span ref="triggerWrapper">
+        <span ref="triggerWrapper" style="display:inline-block;">
             <slot></slot>
         </span>
     </div>
@@ -26,6 +26,9 @@
             onClickDocument (e) {
                 if (this.$refs.popover &&
                     (this.$refs.popover === e.target || this.$refs.popover.contains(e.target))
+                ) { return }
+                if (this.$refs.contentWrapper &&
+                    (this.$refs.contentWrapper === e.target || this.$refs.contentWrapper.contains(e.target))
                 ) { return }
                 this.close()
             },
