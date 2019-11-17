@@ -151,29 +151,29 @@
             transform: translateY(-100%);
             margin-top: -10px;
             &::before,&::after{left: 10px;}
-            &::before{border-top-color: black;top: 100%;}
+            &::before{border-top-color: black;top: 100%;border-bottom: none;}
             &::after{border: 10px solid transparent;border-top-color: white;
-                top: calc(100% - 1px);}
+                top: calc(100% - 1px);border-bottom: none;}
         }
         &.position-bottom{
             margin-top: 10px;
             &::before,&::after{left: 10px;}
-            &::before{border-bottom-color: black;bottom: 100%;}
+            &::before{border-bottom-color: black;bottom: 100%;border-top: none;}
             &::after{border: 10px solid transparent;border-bottom-color: white;
-                bottom: calc(100% - 1px);}
+                bottom: calc(100% - 1px);border-top: none;}
         }
         &.position-left{
             transform: translateX(-100%);
             margin-left: -10px;
             &::before,&::after{transform: translateY(-50%);top: 50%;}
-            &::before{border-left-color:black;left: 100%;}
-            &::after{border-left-color: white;left: calc(100% - 1px);}
+            &::before{border-left-color:black;left: 100%;border-right: none;}
+            &::after{border-left-color: white;left: calc(100% - 1px);border-right: none;}
         }
         &.position-right{
             margin-left: 10px;
             &::before,&::after{transform: translateY(-50%);top: 50%;}
-            &::before{border-right-color:black;right: 100%;}
-            &::after{border-right-color: white;right: calc(100% - 1px);}
+            &::before{border-right-color:black;right: 100%;border-left: none;}
+            &::after{border-right-color: white;right: calc(100% - 1px);border-left: none;}
         }
     }
 </style>
