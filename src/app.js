@@ -49,7 +49,7 @@ Vue.component('g-toast',Toast)
 new Vue({
     el: '#app',
     data: {
-        selectedTab: 'sports',
+        selectedTab: ['2'],
     },
     created() {
     },
