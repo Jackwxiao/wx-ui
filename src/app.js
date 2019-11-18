@@ -18,6 +18,13 @@ import TabsBody from './tabs-body'
 import TabsItem from './tabs-item'
 import TabsPane from './tabs-pane'
 import Popover from './Popover'
+import Collapse from './collapse'
+import CollapseItem from './collapse-item'
+import chai from 'chai'
+import spies from 'chai-spies'
+
+Vue.component('g-collapse', Collapse)
+Vue.component('g-collapse-item', CollapseItem)
 
 Vue.component('g-popover', Popover)
 Vue.component('g-tabs', Tabs)
@@ -73,8 +80,6 @@ new Vue({
 })
 
 
-import chai from 'chai'
-import spies from 'chai-spies'
 chai.use(spies)
 const expect = chai.expect
 
