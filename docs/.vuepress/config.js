@@ -1,4 +1,3 @@
-const path = require('path')
 module.exports = {
     title: 'Wheels UI',
     description: '一个简结好用的 UI 的框架',
@@ -23,18 +22,9 @@ module.exports = {
                 collapsable: true,
                 children: [
                     '/components/button',
-                    '/components/collapse',
-                    '/components/grid',
                     '/components/input',
-                    '/components/layout',
-                    '/components/popover',
-                    '/components/tabs',
-                    '/components/toast',
                 ]
             }
         ]
     },
-    scss:{
-        includePaths: [path.join(__dirname, '../../styles')]
-    }
 }
