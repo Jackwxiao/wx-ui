@@ -1,5 +1,5 @@
 <template>
-    <div class="tabs-head">
+    <div class="tabs-head" ref="head">
         <slot></slot>
         <div class="line" ref="line"></div>
         <div class="action-wrapper">
