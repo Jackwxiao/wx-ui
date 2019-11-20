@@ -26,7 +26,7 @@ module.exports = {
                     '/components/grid',
                     '/components/popover',
                     '/components/layout',
-                    // '/components/toast',
+                    '/components/toast',
                     '/components/tabs',
                 ]
             }

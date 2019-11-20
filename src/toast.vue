@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper" :class="toastClasses">
+    <div class="gulu-toast" :class="toastClasses">
         <div class="toast" ref="toast">
             <div class="message">
                 <slot v-if="!enableHtml"></slot>
@@ -38,7 +38,7 @@
             type: String,
             default: 'top',
             validator(value){
-                return ['top','bottom','middle'].indexOf(value) >=0
+                return ['top','bottom','middle'].indexOf(value) >= 0
             }
         }
     },
@@ -49,7 +49,7 @@
     computed:{
         toastClasses(){
           return {
-              [`position-${this.position}`]:true
+              [`position-${this.position}`]: true
           }
         }
     },
@@ -58,7 +58,7 @@
             if (this.autoClose){
                 setTimeout(()=>{
                     this.close()
-                },this.autoClose*1000)
+                },this.autoClose * 1000)
             }
         },
         updateStyles(){
@@ -97,7 +97,7 @@
         0% {opacity: 0; }
         100% {opacity: 1;}
     }
-    .wrapper {
+    .gulu-toast {
         position: fixed;
         left: 50%;
         transform: translateX(-50%);
