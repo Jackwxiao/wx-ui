@@ -3,15 +3,14 @@
             @click="$emit('click')">
             <g-icon class="icon" v-if="icon && !loading" :name="icon"></g-icon>
             <g-icon name="loading" v-if="loading" class="loading icon"></g-icon>
-            <div class="content">
+            <div class="g-button-content">
                 <slot></slot>
             </div>
-<!--            slot内不能加class-->
         </button>
 </template>
 
 <script>
-    import Icon from './icon'
+    import Icon from '../icon'
 
     export default {
         name: 'GuLuButton',
@@ -36,7 +35,7 @@
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     $font-size: 14px;
     $button-height: 32px;
     $button-bg: white;
@@ -54,10 +53,10 @@
         &:hover {border-color: $border-color-hover; }
         &:active { background: $button-active-bg; }
         &:focus { outline: none; }
-        > .content{ order: 2;}
+        > .g-button-content{ order: 2;}
         > .icon{ order: 1;margin-right: .1em;margin-left: 0;}
         &.icon-right{
-            > .content{ order: 1; }
+            > .g-button-content{ order: 1; }
             > .icon{ order: 2;margin-left: .1em;margin-right: 0; }
         }
     }

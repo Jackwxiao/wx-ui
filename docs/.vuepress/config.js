@@ -1,3 +1,4 @@
+const path = require('path')
 module.exports = {
     title: 'Wheels UI',
     description: '一个简结好用的 UI 的框架',
@@ -11,6 +12,7 @@ module.exports = {
         sidebar: [
             {
                 title: '入门',
+                collapsable: false,
                 children: [
                     '/install/',
                     '/get-started/',
@@ -18,11 +20,21 @@ module.exports = {
             },
             {
                 title: '组件',
+                collapsable: true,
                 children: [
-                    '/components/Button',
-
+                    '/components/button',
+                    '/components/collapse',
+                    '/components/grid',
+                    '/components/input',
+                    '/components/layout',
+                    '/components/popover',
+                    '/components/tabs',
+                    '/components/toast',
                 ]
             }
-        ],
+        ]
+    },
+    scss:{
+        includePaths: [path.join(__dirname, '../../styles')]
     }
 }

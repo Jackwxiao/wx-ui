@@ -1,4 +1,4 @@
-# 轱辘 - 这是一个 Vue UI 组件
+# Wheels - 这是一个 Vue UI 组件
 
 [![Build Status](https://travis-ci.org/WUXIAOd/gulu-1.svg?branch=master)](https://travis-ci.org/WUXIAOd/gulu-1)
 
@@ -26,7 +26,7 @@
     ```
     IE 8 及以上浏览器都支持此样式
 
-2. 安装 gulu
+2. 安装 
     ```
     npm install --save wuxiaod-1109
     ```
