@@ -1,17 +1,18 @@
 module.exports = {
-    title: 'gulu UI',
+    base:'/gulu-1/',
+    title: 'Gulu UI',
     description: '一个简结好用的 UI 的框架',
     themeConfig: {
         logo: '/assets/img/logo.png',
         nav: [
             { text: '首页', link: '/' },
-            { text: '文档', link: '/guide/',target:'_blank' },
+            { text: '文档', link: 'https://cn.vuejs.org/',target:'_blank' },
             { text: '交流', link: 'https://google.com',target:'_blank'},
         ],
         sidebar: [
             {
                 title: '入门',
-                collapsable: false,
+                collapsable: true,
                 children: [
                     '/install/',
                     '/get-started/',
