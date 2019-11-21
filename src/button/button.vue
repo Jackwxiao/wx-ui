@@ -1,9 +1,9 @@
 <template>
-        <button class="g-button" :class="{[`icon-${iconPosition}`]: true}"
+        <button class="gulu-button" :class="{[`icon-${iconPosition}`]: true}"
             @click="$emit('click')">
             <g-icon class="icon" v-if="icon && !loading" :name="icon"></g-icon>
             <g-icon name="loading" v-if="loading" class="loading icon"></g-icon>
-            <div class="g-button-content">
+            <div class="gulu-button-content">
                 <slot></slot>
             </div>
         </button>
@@ -46,19 +46,18 @@
     $border-color-hover: #666;
     @keyframes spin { 0% { transform: rotate(0deg);} 100% { transform: rotate(360deg);} }
     .loading{ animation: spin 2s infinite linear;}
-    .g-button {font-size: $font-size;height: $button-height;padding: 0 1em;
+    .gulu-button {font-size: $font-size;height: $button-height;padding: 0 1em;
         border-radius: $border-radius;border: 1px solid $border-color;
         background: $button-bg;display: inline-flex;justify-content: center;align-items: center;
         vertical-align: middle;//解决对不齐的css问题
         &:hover {border-color: $border-color-hover; }
         &:active { background: $button-active-bg; }
         &:focus { outline: none; }
-        > .g-button-content{ order: 2;}
+        > .gulu-button-content{ order: 2;}
         > .icon{ order: 1;margin-right: .1em;margin-left: 0;}
         &.icon-right{
-            > .g-button-content{ order: 1; }
+            > .gulu-button-content{ order: 1; }
             > .icon{ order: 2;margin-left: .1em;margin-right: 0; }
         }
     }
-
 </style>
