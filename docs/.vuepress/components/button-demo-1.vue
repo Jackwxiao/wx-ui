@@ -18,9 +18,9 @@
         data () {
             return {
                 content:`<g-button>默认按钮</g-button>
-<g-button icon="settings">设置按钮</g-button>
-<g-buttone :loading="tru">加载中按钮</g-button>
-<g-button disabled>无法点击按钮</g-button>
+    <g-button icon="settings">设置按钮</g-button>
+    <g-buttone :loading="tru">加载中按钮</g-button>
+    <g-button disabled>无法点击按钮</g-button>
       `.replace(/^ {8}/gm, '').trim()
             }
         }
