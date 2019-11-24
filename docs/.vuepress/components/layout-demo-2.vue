@@ -5,7 +5,6 @@
             <strong>预览</strong>
         </p>
 
-
         <g-layout style="color: white; overflow:hidden; margin-bottom:50px;">
             <g-header style="height: 50px; background:#FFEFE0;">
                 header

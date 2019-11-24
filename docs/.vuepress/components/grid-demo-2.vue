@@ -1,6 +1,6 @@
 <template>
     <div style="padding-top: 16px;">
-        <h2>可以设置 gutter</h2>
+        <h2>可以设置 gutter 的网格</h2>
         <p>
             <strong>预览</strong>
         </p>

@@ -1,6 +1,6 @@
 <template>
     <div style="padding-top: 16px;">
-        <h2>24格网格</h2>
+        <h2>一个 div 被分成 24 格网格</h2>
         <p>
             <strong>预览</strong>
         </p>
