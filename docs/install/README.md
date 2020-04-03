@@ -5,11 +5,11 @@ title: 安装
 
 
 ```
-npm install  gulu-1 
+npm install  wx-ui
 ``` 
 或 
 ```
-yarn add gulu-1
+yarn add wx-ui
 ```
 
 ::: tip

@@ -10,7 +10,7 @@ title: 快速上手
 
 ```
 import Vue from 'vue';
-import {Button} from 'gulu-1';
+import {Button} from 'wx-ui';
 
 new Vue({
   el: '#app',
