@@ -1,4 +1,4 @@
-# Wheels - 这是一个 Vue UI 组件
+# WX-UI - 这是一个 Vue UI 组件
 
 [![Build Status](https://travis-ci.org/WUXIAOd/gulu-1.svg?branch=master)](https://travis-ci.org/WUXIAOd/gulu-1)
 
