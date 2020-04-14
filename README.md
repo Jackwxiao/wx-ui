@@ -1,9 +1,10 @@
-<div align=center><img width="150" height="150" src="https://i.loli.net/2020/04/14/L1dKY6jaq5zhNRP.png></div>
+<div align=center>
+   <img width="150" height="150" src="https://i.loli.net/2020/04/14/L1dKY6jaq5zhNRP.png>
+</div>
    
-# WX-UI - 这是一个 Vue UI 组件
-
-
 [![Build Status](https://travis-ci.org/WUXIAOd/gulu-1.svg?branch=master)](https://travis-ci.org/WUXIAOd/gulu-1)
+
+# WX-UI - 这是一个 Vue UI 组件
 
 ## 介绍
 
