@@ -1,6 +1,5 @@
-
-![logo.png](https://i.loli.net/2020/04/14/sDIGvmaLgHlQ8rV.png)
-
+<div align=center><img width="150" height="150" src="https://i.loli.net/2020/04/14/L1dKY6jaq5zhNRP.png></div>
+   
 # WX-UI - 这是一个 Vue UI 组件
 
 
