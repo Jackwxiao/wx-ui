@@ -1,4 +1,5 @@
 <p align="center"><a href="http://pigxw.top/wx-ui/" target="_blank" rel="noopener noreferrer"><img width="100" src="https://i.loli.net/2020/04/14/L1dKY6jaq5zhNRP.png" alt="Wx-ui logo"></a></p>
+
 [![Build Status](https://travis-ci.org/WUXIAOd/gulu-1.svg?branch=master)](https://travis-ci.org/WUXIAOd/gulu-1)
 
 # WX-UI - 这是一个 Vue UI 组件
