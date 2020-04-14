@@ -2,7 +2,7 @@
 
 <p align='center'><a href="https://travis-ci.com/WUXIAOd/wx-ui.svg?branch=master"><img src="https://travis-ci.com/WUXIAOd/wx-ui.svg?branch=master" alt="Build Status"></a></p>
 
-<h2 align='center'> WX-UI - 这是一个 Vue UI 组件</h2>
+<h2 align='center'> WX-UI 这是一个 Vue UI 组件</h2>
 
 ## 介绍
 
