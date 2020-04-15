@@ -53,6 +53,18 @@
     ```
 
 ## 文档
+#### API
+Button Attributes
+| 属性 | 说明 | 类型 | 参数 | 默认值 |
+| ---- | ---- | ---- | ---- | ----  |
+| iconPosition | 内置icon的位置 | String | - | left |
+| loading | 是否有加载中标志 | Boolean | - | false |
+
+Collapse Attributes
+| 属性 | 说明 | 类型 | 参数 | 默认值 |
+| ---- | ---- | ---- | ---- | ----  |
+| single | 是否只展开一个面板 | Boolean | - | false |
+| selected | 选中与否的数量 | Array | - | - |
 
 ## 提问
 
