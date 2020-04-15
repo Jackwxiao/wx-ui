@@ -1,6 +1,11 @@
 <p align='center'><a href="http://pigxw.top/wx-ui/" target="_blank" rel="noopener noreferrer"><img width="100" src="https://i.loli.net/2020/04/14/L1dKY6jaq5zhNRP.png" alt="Wx-ui logo"></a></p>
 
-<p align='center'><a href="https://travis-ci.com/WUXIAOd/wx-ui.svg?branch=master"><img src="https://travis-ci.com/WUXIAOd/wx-ui.svg?branch=master" alt="Build Status"></a></p>
+<p align='center'>
+   <a href="https://travis-ci.com/WUXIAOd/wx-ui.svg?branch=master"><img src="https://travis-ci.com/WUXIAOd/wx-ui.svg?branch=master" alt="Build Status"></a>
+   <a href="https://www.npmjs.com/package/wuxiaod-1109"><img src="https://img.shields.io/npm/v/wuxiaod-1109" alt="Version"></a>
+   <a href="https://www.npmjs.com/package/wuxiaod-1109"><img src="https://img.shields.io/npm/l/wuxiaod-1109" alt="License"></a>
+</p>
+
 
 <h2 align='center'> WX-UI 这是一个 Vue UI 组件</h2>
 
